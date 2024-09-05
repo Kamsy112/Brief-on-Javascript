@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            my
+        </title>
+    </head>
+    <body>
+        <p id="hour"></p>
+        <p id="greet"></p>
+        <p id="number"></p>
+        <button onclick="myFunction()">Click Me</button> <br>
+        <script>var num=10
+            var text="string"
+            var is_student=true
+            var name=null
+            var grade;
+            let a=10
+            {
+                let a=50
+            }
+            
+            document.write("The name is"+ text+ "<br>")
+            document.write("It is"+ name+"<br>")
+            document.write("It is"+ grade)
+            
+            
+            function myFunction(){
+                var greeting;
+                var time=new Date().getHours();
+            
+                if(time<10){
+                    greeting="Good morning";
+                    }
+            
+                    else if(time<20){
+                        greeting="Good day";
+                    }
+            
+                    else{
+                        greeting="Good evening";
+                    }
+            
+                    document.getElementById("hour").innerHTML="Current hour is:"+time;
+                    document.getElementById("greet").innerHTML=greeting;
+                }
+
+                    var test="";
+                   var i=0;
+                   while(i<10){
+                    test +="<br>The number is"+i;
+                    i++; 
+
+                   }
+                    document.getElementById("number").innerHTML=test;
+                    </script>
+    </body>
+</html>
